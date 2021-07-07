@@ -13,6 +13,6 @@ Dependencies: </br>
 </br>
 Images: <br>
 ![Registration](https://user-images.githubusercontent.com/78814608/124814214-5b46ab80-df83-11eb-8631-022f53c5a89c.png) </br>
-![login](https://user-images.githubusercontent.com/78814608/124814231-60a3f600-df83-11eb-9fb3-24b3dcf156a9.png) </br>
+![Login](https://user-images.githubusercontent.com/78814608/124814231-60a3f600-df83-11eb-9fb3-24b3dcf156a9.png) </br>
 ![Menu](https://user-images.githubusercontent.com/78814608/124814253-67326d80-df83-11eb-9f2c-5187f587de37.png) </br>
 ![Order](https://user-images.githubusercontent.com/78814608/124814272-6dc0e500-df83-11eb-9163-5f04b1e96abe.png) </br>
