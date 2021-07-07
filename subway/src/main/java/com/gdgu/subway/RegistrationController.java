@@ -1,9 +1,6 @@
-package com.gdgu.controller;
+package com.gdgu.subway;
 
 import javax.validation.Valid;
-
-import com.gdgu.entity.Registration;
-import com.gdgu.repository.UserRepository;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.crypto.password.PasswordEncoder;

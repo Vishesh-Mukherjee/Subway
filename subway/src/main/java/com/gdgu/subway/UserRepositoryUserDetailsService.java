@@ -1,8 +1,5 @@
 package com.gdgu.subway;
 
-import com.gdgu.entity.User;
-import com.gdgu.repository.UserRepository;
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;

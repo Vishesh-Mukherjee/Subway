@@ -1,6 +1,4 @@
-package com.gdgu.repository;
-
-import com.gdgu.entity.Order;
+package com.gdgu.subway;
 
 import org.springframework.data.repository.CrudRepository;
 import org.springframework.stereotype.Repository;

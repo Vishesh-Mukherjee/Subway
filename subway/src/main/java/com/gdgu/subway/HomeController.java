@@ -1,4 +1,4 @@
-package com.gdgu.controller;
+package com.gdgu.subway;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;

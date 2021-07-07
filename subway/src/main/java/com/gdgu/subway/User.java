@@ -1,4 +1,4 @@
-package com.gdgu.entity;
+package com.gdgu.subway;
 
 import java.util.Arrays;
 import java.util.Collection;

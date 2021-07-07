@@ -1,4 +1,4 @@
-package com.gdgu.entity;
+package com.gdgu.subway;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;

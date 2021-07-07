@@ -1,4 +1,4 @@
-package com.gdgu.entity;
+package com.gdgu.subway;
 
 import javax.validation.constraints.Email;
 import javax.validation.constraints.Min;
