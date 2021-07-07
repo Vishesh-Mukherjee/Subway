@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Subway</title>
+</head>
+<body>
+    <a th:href="@{/}"><img th:src="@{/images/logo.png}"></a> 
+    <h1>Registration Form</h1>
+    <form  th:action = "@{/registration}" method = "POST" th:object="${registration}">
+        <div th:if=${#fields.hasErrors()}>
+            <span style="color:RED">Please correct the problems below and resubmit</span> <br>
+        </div>
+        <h2>Person Details:</h2>
+        <span>Firstname: </span>
+        <input type="text" th:field=*{firstname} >
+        <span style="color:RED" th:if="${#fields.hasErrors()}" th:errors=*{firstname}></span>
+        <br> <br>
+        <span>Lastname: </span>
+        <input type="text" th:field=*{lastname} >
+        <span style="color:RED" th:if="${#fields.hasErrors()}" th:errors=*{lastname}></span>
+        <br> <br>
+        <span>Age: </span>
+        <input type="text" th:field=*{age} >
+        <span style="color:RED" th:if="${#fields.hasErrors()}" th:errors=*{age}></span>
+        <br> <br>
+        <span>Gender: </span>
+        <input type="radio" th:field="*{gender}" th:value="Male">
+        <span>Male</span>
+        <input type="radio" th:field="*{gender}" th:value="Female">
+        <span>Female</span>
+        <input type="radio" th:field="*{gender}" th:value="Others">
+        <span>Others</span>
+        <span style="color:RED" th:if="${#fields.hasErrors()}" th:errors=*{gender}></span>
+        <br> <br>
+        <span>Phone number: </span>
+        <input type="text" th:field=*{phoneNo}>
+        <span style="color:RED" th:if="${#fields.hasErrors()}" th:errors=*{phoneNo}></span>
+        <br> <br>
+        <span>Email: </span>
+        <input type="text" th:field=*{email}>
+        <span style="color:RED" th:if="${#fields.hasErrors()}" th:errors=*{email}></span>
+        <br> <br>
+        <h2>Accout Details: </h2>
+        <span>Username: </span>
+        <input type="text" th:field=*{username}>
+        <span style="color:RED" th:if="${#fields.hasErrors()}" th:errors=*{username}></span>
+        <span style="color:RED" th:text="${usernameExist}"></span> 
+        <br> <br>
+        <span>Password: </span>
+        <input type="password" th:field=*{password}> 
+        <span style="color:RED" th:if="${#fields.hasErrors()}" th:errors="*{password}"></span>
+        <br> <br>
+        <span>Confirm password: </span>
+        <input type="password" th:field=*{confirmPassword}> 
+        <span style="color:RED" th:text="${invalidPassword}"></span>
+        <br> <br>
+        <button>Register</button>
+    </form>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Subway</title>
+</head>
+
+<body>
+    <a th:href="@{/dashboard}"><img th:src="@{/images/logo.png}"></a>
+    <h1>Menu:</h1>
+    <form th:action="@{/menu}" method="POST" th:object="${order}">
+        <div th:each="menuItem : ${menuSandwichList}">
+            <h2 th:text="${menuItem.name}"></h2>
+            <img th:src="${menuItem.image}">
+            <p th:text="${menuItem.description}"></p>
+            <b><span>Nutrition Information:</span></b>
+            <div th:each="nutrition : ${menuItem.nutritionInformation}">
+                <span th:text="${nutrition.nutritionName}"></span>
+                <span>:</span>
+                <b><span th:text="${nutrition.nutritionValue}"></span></b>
+            </div>
+            <br>
+            <span>Rs </span>
+            <span th:text="${menuItem.price}"></span>
+            <input type="checkbox" th:field="*{sandwichIds}" th:value="${menuItem.id}">
+            <span >Add to cart</span>
+        </div>
+        <br>
+        <button>Order Now</button>
+    </form>
+</body>
+
+</html>
